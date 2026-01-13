@@ -46,12 +46,27 @@ pip install -r requirements.txt
 - NumPy >= 1.24.0
 - Matplotlib >= 3.7.0
 
+## Project Structure
+
+```
+05-nn-visualizer/
+├── main.py                      # Entry point
+├── nn_visualizer/
+│   ├── __init__.py             # Package exports
+│   ├── models.py               # LayerConfig dataclass
+│   ├── network.py              # NeuralNetwork implementation
+│   ├── visualizer.py           # NeuralNetworkVisualizer
+│   └── data_generators.py      # Spiral, XOR, Circles generators
+├── requirements.txt
+└── README.md
+```
+
 ## Usage
 
 ### Quick Demo
 
 ```bash
-python nn_visualizer.py
+python main.py
 ```
 
 This generates:
